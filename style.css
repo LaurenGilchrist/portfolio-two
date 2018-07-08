@@ -1,0 +1,305 @@
+
+
+html {
+	font-size: 16px;
+	margin-top: 0;
+	font-family:'Noticia Text', serif;
+	font-size: 20px;
+
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 100px auto auto auto auto auto auto 120px;
+	padding: 10px;
+	width: 90%;
+	margin: 2rem auto;
+	max-width: 2000px;
+}
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccccb3;
+  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+  padding: 1em;
+  font-size: 30px;
+  text-align: center;
+
+}
+body {
+	background: url("images/clouds.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.header {
+	grid-column: 1/-1;
+	justify-content: space-between;
+	background-color: #ffff99;
+
+}
+h2 {
+	font-family: 'Satisfy', cursive, serif;
+	text-shadow: 8px 8px 4px rgba(150, 150, 150, 1);
+
+
+}
+p {
+	font-size: large;
+
+}
+.info {
+	grid-column: 1/-1;
+	justify-content: space-between;
+	font-size: small;
+}
+
+
+nav ul{
+	display: flex;
+	font-size: 18px;
+	justify-content: space-between;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 400px;
+	background-color: #eee;
+}
+nav li a {
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+nav li a:hover {
+	background-color: #555;
+	color: white;
+
+}
+
+.hero {
+grid-column: 1/-1;
+background-image: url("./images/nature_8924.jpg");
+height: auto;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+
+
+}
+.content {
+	display: flex;
+	flex-direction: column;
+
+
+}
+.contentImage {
+  border-radius: 95%;
+  width: 200px;
+  height: 200px;
+  transition: transfrom 400ms ease-out;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0,0,0,0.4);
+}
+
+.contentImage:hover {
+  transform: scale(1.15);
+
+}
+
+.LaurenGilchrist {
+	width: 200px;
+	border: 1px solid #333;
+	display: flex;
+	justify-content: flex-start;
+
+}
+.about {
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+ul {
+
+	align-items: center;
+	list-style-type: none;
+
+
+}
+.myProjects {
+	display: flex;
+	grid-column: 1/-1;
+	align-items: center;
+	padding-top: .01em;
+	padding-bottom: .01em;
+	font-size: x-large;
+	background: url("./images/yellowbackground.jpg");
+	font-family: 'Shrikhand', cursive, serif;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.skillsset {
+	display: flex;
+	grid-column: 1/-1;
+	align-items: center;
+	list-style: none;
+	font-size: 100%;
+	padding-bottom: 35px;
+
+}
+.skillset p {
+	margin: .10rem;
+}
+.contactMe {
+	display: flex;
+	grid-column: 1/-1;
+	align-items: center;
+	justify-content: space-between;
+	list-style: none;
+}
+.footer {
+  display: flex;
+  grid-column: 1/-1;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1em;
+  height: 100px;
+  padding: 30px;
+  padding-bottom: 35px;
+  background-color:  #e6e6ff;
+
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  margin: .1em;
+}
+.fa-github {
+	background: #000;
+	color: white;
+	margin: .1em;
+}
+.top {
+  display: flex;	
+  position: center;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  padding: 1px;
+  border-radius: 8px;
+}
+
+.top:hover {
+  background-color: #555;
+}
+.styled{
+  color: blue;
+}
+
+.hover{
+  color: blue;
+  font-size: 200%;
+  transition: 2s;
+}
+
+footer{
+  color: black;
+  font-size: 100%;
+  transition: 2s;
+}
+
+#slider ::selection {
+  color: inherit;
+  background: transparent;
+}
+
+#slider-frame {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 5px #333;
+  position: relative;
+}
+
+#slider-prev,
+#slider-next {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  padding: 1em;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 0 2px #000;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#slider-prev:hover,
+#slider-next:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+#slider-prev {
+  left: 0;
+  flex-direction: row;
+  align-items: center;
+}
+
+#slider-next {
+  right: 0;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+#slider-frame {
+  background: #ccc;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+  height: 15em;
+}
+
+#slider-frame [data-src] {
+  display: none;
+}
+
+#slider-caption {
+  margin-top: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  padding: 0.2em 0.5em;
+  font-size: 0.8em;
+  text-align: center;
+  transition: 0.5s;
+}
+
+#slider-caption.flash {
+  transition: 0s;
+  background: #ccc;
+}
