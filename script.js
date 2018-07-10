@@ -1,3 +1,13 @@
+const h1 = document.querySelector('h1');
+h1.addEventListener('mouseover', function (){
+  h1.classList.add('hover');
+})
+h1.addEventListener('mouseout', function (){
+  h1.classList.remove('hover');    
+});
+
+
+
 const footer = document.querySelector('footer');
 footer.addEventListener('mouseover', function (){
   footer.classList.add('hover');
@@ -71,3 +81,24 @@ function addSliderEventListeners() {
   }
 
 })();
+
+const articles = document.querySelectorAll('article');
+
+for(let i=0; i<articles.length; i++){
+  let button = articles[i].querySelector('button');
+  let para = articles[i].querySelector('p');
+  
+  button.addEventListener('click', function(){
+    articles[i].classList.toggle('expanded');
+    button.innerHTML = articles[i].classList.contains('expanded') ?
+      'Hide Details' : 'Show Details';
+ });
+}
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}

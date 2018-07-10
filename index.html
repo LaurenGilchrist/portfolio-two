@@ -17,14 +17,19 @@
 			<h2 id="logo">Lauren Gilchrist</h2>
 
 			<nav>
+				<div class="topnav" id="myTopnav">
 				<ul>
 					<li><a href="#aboutMe">About Me</a></li>
 					<li><a href="#Projects">Projects</a></li>
 					<li><a href="#Skills">Skills</a></li>
-					<li><a href="#Contact">Contact</a></li>
+					<li><a href="#Contact">Contact</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+					</a>
+					</li>
 				</ul>	
 			</nav>	
-
+		</div>
 		</div>
 
 		<div class="grid-item hero">
@@ -36,7 +41,7 @@
 
 			<section id="aboutMe">
 				<h2>About Me</h2>
-				<p>I have worked for an Independent Pediatrician for the last 13 years as a receptiontist. I have gained the skills to communicate effectively, how to resolve conflict and adapt in a fast paced environment. I play alto saxophone in the Bay Village Community Band and love the creative and collaborative part of playing in a band.</p>
+				<p>I have worked for an Independent Pediatrician for the last 13 years as a receptiontist. I have gained the skills to communicate effectively, how to resolve conflict and adapt in a fast paced environment. I play alto saxophone in the Bay Village Community Band and love the creative and collaborative part of playing in a band. In my spare time, I love to create beatufil crafts. Love animals and would have more if I could.</p>
 
 				<p>I am currently enrolled in We Can Code It. I have learned computational thinking, back end computer programming and front end web development. I have enjoyed the daily challenges it has given me. With the skills sets that I have learned at the boot camp, I am looking forward to starting my career as a software developer and to creatively build software that exceeds the expectations of the customer.</p>  
 			<div id ="slider">
@@ -44,13 +49,16 @@
 				<div id= "slider-prev">Previous</div>
 				<div id= "slider-next">Next</div>
 			<div id= "slider-images">
-				<div data-src="./images/WCCI_May18-0038.jpg">
-					My Professional Photo
+				<div data-src="./images/bvcb.jpg">
+					Bay Village Community Band Saxophones
 				</div>
-				<div data-src="./images/nature.8924.jpg">
-					Bay Village
+				<div data-src="./images/crafts.jpg">
+					Love to craft 
 				</div>
-				<div data-src="./images/clouds.jpg">
+				<div data-src="./images/crafts2.jpg">
+					My happy place is creating beautiful things
+				</div>
+				<div data-src="./images/doggies.jpg">
 					My dogs
 				</div>
 			</div>
@@ -85,7 +93,9 @@
 		<div class="grid-item skillsset">
 			<section id="Skills">
 				<h4>Skills</h4>
-				<p>Here are the skillsets I learned from We Can Code It.</p>
+				<article>
+				<button>Show Skill Set</button>
+				<p>Here are the skill sets I learned from We Can Code It.</p>
 				<section id=skillsList">
 					<p>TDD</p>
 					<p>Eclipse IDE</p>
@@ -96,10 +106,11 @@
 					<p>Flexbox</p>
 					<p>Spring MVC</p>
 					<p>Git</p>
+
 				</section>
 				
 					<h4 id="Resume"><a href="https://docs.google.com/document/d/1e9GVi2X_ex3pQJen8PpikeFeGg-XW5A63edWIEcaSjE/edit?ts=5b142e15">Resume</a></li>
-					</ul>
+					</article>
 				</section>
 			</div>
 
